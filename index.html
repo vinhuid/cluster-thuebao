@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"PROJECT X","children":[{"content":"PA01:Thông số HA có User/Config hiện tại","children":[{"content":"1.1.Cấu hình dự định","children":[{"content":"<table data-lines=\"4,9\">\n<thead data-lines=\"4,5\">\n<tr data-lines=\"4,5\">\n<th>Cấu hình</th>\n<th>SL/DV</th>\n</tr>\n</thead>\n<tbody data-lines=\"6,9\">\n<tr data-lines=\"6,7\">\n<td><em>vCPU</em></td>\n<td><em>16 GB</em></td>\n</tr>\n<tr data-lines=\"7,8\">\n<td><em>RAM</em></td>\n<td><em>20 GB</em></td>\n</tr>\n<tr data-lines=\"8,9\">\n<td><em>SSD</em></td>\n<td><em>200 GB</em></td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"4,9"}}],"payload":{"lines":"3,4"}},{"content":"1.2.Sức chứa dự định","children":[{"content":"<table data-lines=\"10,13\">\n<thead data-lines=\"10,11\">\n<tr data-lines=\"10,11\">\n<th>Hệ thống</th>\n<th>User</th>\n</tr>\n</thead>\n<tbody data-lines=\"12,13\">\n<tr data-lines=\"12,13\">\n<td><em>1-n sản phẩm</em></td>\n<td><em>3000</em></td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"10,13"}}],"payload":{"lines":"9,10"}},{"content":"1.3.Giá thành dự định","children":[{"content":"<table data-lines=\"14,17\">\n<thead data-lines=\"14,15\">\n<tr data-lines=\"14,15\">\n<th>Tổng</th>\n<th>Giá</th>\n</tr>\n</thead>\n<tbody data-lines=\"16,17\">\n<tr data-lines=\"16,17\">\n<td><em>x(01Ser)</em></td>\n<td><em>44.220.000 VND</em></td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"14,17"}}],"payload":{"lines":"13,14"}}],"payload":{"lines":"1,2"}},{"content":"PA02:Thông số hạ tầng làm Cloud","children":[{"content":"2.1.Cấu hình x thông số cơ bản của PA01(tuỳ giai đoạn thời điểm NCC báo giá)","children":[],"payload":{"lines":"20,21"}}],"payload":{"lines":"18,19"}},{"content":"PA03:Thông số Cloud khác","children":[{"content":"3.1.Drive","children":[{"content":"<a href=\"https://one.google.com/about/plans?i=m&amp;utm_source=drive&amp;utm_medium=web&amp;utm_campaign=g1_widget_normal&amp;g1_landing_page=7#upgrade\">Link báo giá tham khảo</a>","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"24,25"}},{"content":"3.2.Dropbox","children":[{"content":"<a href=\"https://www.dropbox.com/plans?billing=yearly\">Link báo giá tham khảo</a>","children":[],"payload":{"lines":"27,28"}}],"payload":{"lines":"26,27"}},{"content":"3.3.Khác","children":[{"content":"xxx","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"28,29"}}],"payload":{"lines":"22,23"}}]},{"color":["#2980b9"]})</script>
+</body>
+</html>
